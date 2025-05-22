@@ -1,0 +1,258 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* :root {
+  --background: #ffffff;
+  --foreground: #171717;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+} */
+
+/* Style for the navigation bar */
+/* .nav-bar button {
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+} */
+
+/* Fade effect for the content area */
+.content-area {
+  transition: opacity 0.3s ease;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+/* @keyframes fadeInUp {
+  0% {
+    opacity: 0;
+    transform: translateY(200px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+} */
+
+@keyframes textFadeIn {
+  0%,
+  100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+.greeting-container {
+  /* animation: fadeInUp 3s ease; */
+  height: 60vh;
+  /* justify-content: space-around;*/
+}
+.fade {
+  animation: textFadeIn ease-in-out 3s infinite;
+  font-size: 5em;
+  margin-bottom: 10px;
+  color: #fff;
+}
+.fade-wishes {
+  animation: textFadeIn ease-in-out 3s infinite;
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /*Ensures the video covers the full background*/
+  z-index: -1; /*Places the video behind the text */
+  opacity: 40%;
+  filter: saturate(2);
+  animation: fadeInAnimation ease-in 5s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+/* src/components/CharacterCard.css */
+#baizhu {
+  color: #a7d0a9;
+}
+.character-card {
+  width: 100%;
+  height: 95vh;
+  background: url("./images/zaynes-handwriting.png") no-repeat center
+    center/cover;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 80%;
+}
+
+/* .main-card {
+} */
+
+.page-transition {
+  opacity: 0;
+  background: black;
+  transform: translateY(40px);
+  filter: blur(12px);
+}
+/*
+.card-content {
+  width: 90%;
+  max-width: 2000px;
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 20px;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 20px;
+}
+
+.navbar ul li {
+  list-style: none;
+  cursor: pointer;
+}
+
+.auth-buttons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.search-box {
+  padding: 5px;
+  border-radius: 5px;
+  border: none;
+}
+
+.character-info {
+  flex: 2;
+  padding: 20px;
+}
+
+.rank {
+  font-size: 1.2em;
+  color: #ffd700;
+}
+
+.character-name {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin: 10px 0;
+}
+
+.description {
+  font-size: 1em;
+  line-height: 1.5;
+  color: #ccc;
+  width: 70%;
+}
+
+.about-section {
+  flex: 1;
+  align-content: center;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 20px;
+  border-radius: 10px;
+  text-align: right;
+  font-size: 20px;
+}
+
+.about-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-section ul li {
+  margin: 10px 0;
+  cursor: pointer;
+  transition: color 0.3s;
+  transition: all 500ms;
+}
+
+.about-section ul li:hover {
+  color: #ffd700;
+  font-size: 40px;
+  font-size-adjust: 20px;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.person-card {
+  justify-content: space-around;
+} */
+
+.aiu {
+  background-image: url("./images/aiu-pfp.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.ayyo {
+  background-image: url("./images/ayyo-pfp.png");
+  background-position: 10% 30%;
+  background-size: 18rem;
+  background-repeat: no-repeat;
+}
+
+.sadii {
+  background-image: url("./images/sadii-pfp.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.kudo {
+  background-image: url("./images/kudo-pfp.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* Custom Scrollbar Styling for WebKit Browsers */
+
+::-webkit-scrollbar {
+  display: none;
+}

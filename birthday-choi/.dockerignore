@@ -1,0 +1,27 @@
+# Node modules (will be reinstalled in container)
+node_modules
+
+# Logs
+*.log
+npm-debug.log*
+
+# OS / IDE files
+.DS_Store
+*.swp
+*.swo
+.vscode
+.idea
+
+# Git
+.git
+.gitignore
+
+# Environment
+.env
+.env.local
+.env.development
+.env.production
+.next/cache
+
+# Docker files that aren't needed in image
+.dockerignore
